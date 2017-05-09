@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8"/>
@@ -8,14 +9,14 @@
     <p>中国四千年のカレー作り</p>
     <strong>さあ、ゲームを始めようか</strong>
     <h1>材料</h1>
-    <p>以下が<mark>カレー</mark>の<ruby>材料(<rp><rt>ふりがな</rt><rp>)です</p>
-    <ul>
-      <li>牛バラ肉</li><dd>500g</dd>
-      <li>にんじん</li><dd>1本</dd>
-      <li>たまねぎ</li><dd>3個</dd>
-      <li>ジャガイモ</li><dd>3個</dd>
-      <li>市販のカレールー</li><dd>100g</dd>
-    </ul>
+    <p>以下が<mark>カレー</mark>の<ruby>材料(<rp><rt>ふりがな</rt><rp>)</rp></ruby>です</p>
+    <dl>
+      <dt>牛バラ肉</dt><dd>500g</dd>
+      <dt>にんじん</dt><dd>1本</dd>
+      <dt>たまねぎ</dt><dd>3個</dd>
+      <dt>ジャガイモ</dt><dd>3個</dd>
+      <dt>市販のカレールー</dt><dd>100g</dd>
+    </dl>
     
     <h1>作り方</h1>
     <ol>
@@ -29,32 +30,31 @@
     
     <h1>ポイント</h1>
     <ul>
-      <li>すぐに食べても美味しいよ<\li>
+      <li>すぐに食べても美味しいよ
       <li>他のお肉でもOK
        <ul>
-         <li>豚肉</li>
-         <li>鶏肉</li>
+         <li>豚肉
+         <li>鶏肉
        </ul>
-      </li>
+    </ul>
 
         <table>
           <tr><th>材料名</th><th>分量</th><th>単位</th></tr>
-          <tr><th>牛バラ肉</th><th>500</th><th>ｇ</th></tr>
-          <tr><th>にんじん</th><th>1</th><th>本</th></tr>
-          <tr><th>たまねぎ</th><th>3</th><th>個</th></tr>
-          <tr><th>ジャガイモ</th><th>3</th><th>個</th></tr>
-          <tr><th>市販のカレールー</th><th>100</th><th>ｇ</th></tr>
+          <tr><td>牛バラ肉</td><td>500</td><td>ｇ</td></tr>
+          <tr><td>にんじん</td><td>1</td><td>本</td></tr>
+          <tr><td>たまねぎ</td><td>3</td><td>個</td></tr>
+          <tr><td>ジャガイモ</td><td>3</td><td>個</td></tr>
+          <tr><td>市販のカレールー</td><td>100</td><td>ｇ</td></tr>
         </table>
         <h1>アンケート</h1>
-        <from id="top" action="#" method="post">
+        <form id="top" action="#" method="post">
           <p><input type="text" name="input1"></p>
           <p><input type="submit" value="送信">
-            <input　type="reset" value="取り消し"></p>
-        </from>
+            <input type="reset" value="取り消し"></p>
         <p>好きなカレーは
-          <input type="redio" name="input11" value="beef" checked>ビーフカレー
-          <input type="redio" name="input11" value="seafood">シーフードカレー
-          <input type="redio" name="input11" value="chicken">チキンカレー
+          <input type="radio" name="input11" value="beef" checked>ビーフカレー
+          <input type="radio" name="input11" value="seafood">シーフードカレー
+          <input type="radio" name="input11" value="chicken">チキンカレー
         </p>
         <p>好きなカレーは
           <input type="checkbox" name="input11" value="beef" checked>ビーフカレー
@@ -73,7 +73,10 @@
           <option value="seafood" selected>シーフードカレー
           <option value="chicken" selected>チキンカレー
         </select></p>
+        </form>
         
-        <p><vido src="smple.mp4" width="320" controls autoplay>video要素をサポートしていないブラウザで閲覧されています。他のブラウザでご覧下さい。</vido></p>
+        <p><video src="smple.mp4" width="320" controls autoplay>video要素をサポートしていないブラウザで閲覧されています。他のブラウザでご覧下さい。</video></p>
         <p><audio src ="se_maoudamashii_voice_horse01.mp3" controls>audio要素をサポートしていないブラウザで閲覧されています。他のブラウザでご覧ください。</audio></p>
           
+  </body>
+</html>
